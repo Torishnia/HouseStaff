@@ -1,1 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li {
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: url('./img/main_page.jpg') no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+}
+
+header .presentation::after {
+    content: 'Найкращі товари для вашого дому';
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 450px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+header .presentation::before {
+    content: 'за привабливою ціною';
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    width: 300px;
+    font-size: 17px;
+    font-weight: 300;
+    color: rgb(155, 244, 202);
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
