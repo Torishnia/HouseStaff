@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export class Footer extends Component {
-  render() {
+export default function Footer() {
     return (
       <footer>
             Всі права захищені &copy;
       </footer>
     )
-  }
 }
-
-export default Footer
